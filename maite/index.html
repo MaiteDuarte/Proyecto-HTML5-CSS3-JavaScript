@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Big Shoulders Text' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body onmouseout="hideGenres()">
+        <!--Charge Page-->
+        <div id="container">
+            <div id="charge">
+                <img src ="http://maguy69.m.a.pic.centerblog.net/528cac36.gif">
+            </div>
+        </div>
+        <!--POPUP VER O COMPRAR-->
+         <div id ="popup">
+            <span onclick="closePopUp()" class="close">
+                <i class="fa fa-times fa-2x"></i>
+            </span>
+            <h2 id="name"></h2>
+            <img id="imgSrc">
+            <p id="desc" style="color:white"></p>
+            <button id="watch"></button>
+            <button id="buy"></button>
+        </div> 
+        <!-- <div id="loading"></div> -->
+        <header id="header">
+        </header>
+        <!-- Añadimos el spinner -->
+        <div id="spinner">
+            <img src="pages/img/spinner.gif">
+        </div>
+        <!--Añadimos el login(será visible cuando se haga click en el botón)-->
+        <div class="background" onclick="getClose()"></div>
+        <div id="access" class="modal modalClose">
+            <span class="close" onclick="getClose()">&times;</span>
+            <h2>LOGIN</h2>
+            <div id="userpass">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contrase&ntilde;a">
+            </div>
+            <div id="submit">
+                    <button type="submit" onclick="getClose()">Cancelar</button>
+                    <button type="submit">Enviar</button>
+            </div>
+            <div id="otheraccess">
+                <span>Entra con</span>
+                <button type="submit" id ="facebook" class="fatwgo"><i class="fa fa-facebook-square" style='font-size:20px;'></i></button>
+                <button type="submit" id ="twitter" class="fatwgo"><i class="fa fa-twitter" style='font-size:20px;'></i></button>
+                <button type="submit" id ="google" class="fatwgo"><i class="fa fa-envelope" style='font-size:20px;'></i></button>
+            </div>
+            <div id=forgotPass>
+                <span>&#191;Ha olvidado su contrase&ntilde;a&#63;</span>
+            </div>
+        </div>
+        <div id="categories" onmouseover= "genres()" onmouseout="hideGenres()">
+            <div class="bloqueCat">
+                
+                <span value="Terror" onclick="getContent()">Terror</span>
+                
+                <span value="Romantic" onclick="getContent()">Rom&aacute;ntica</span>
+                
+                <span value="Thriller" onclick="getContent()">Thriller</span>
+                
+                <span value="Action" onclick="getContent()">Acci&oacute;n</span>
+                
+                <span value="Drama" onclick="getContent()">Drama</span>
+                
+                <span value="Comedy" onclick="getContent()">Comedia</span>
+            </div>    
+        </div>
+        <!--  -->
+        <div class="background" onclick="closeShare()"></div>
+        <div id="share" class="modal modalClose">
+            <span class="close" onclick="closeShare()">&times;</span>
+            <h3>Compartir ....</h3> 
+            <i class="fa fa-whatsapp" style ="color:#25d366; font-size: 48px;"></i>
+            <i class="fa fa-telegram" style ="color: #1f304e; font-size: 48px;"></i>
+            <i class="fa fa-linkedin" style ="color: #0e76a8; font-size: 48px;"></i>
+            <i class="fa fa-google-plus-circle" style ="color:#db4a39; font-size: 48px;"></i>
+            <i class="fa fa-twitter-square" style ="color: #00acee; font-size: 48px;"></i>
+        </div>
+        <div id="content"></div>
+        <footer id="footer">
+        </footer>
+        <div id="cookies" style="display: none;" >
+            <div id="cookiesBackground"></div>
+                <span onclick="closeCookies()" class="close">&times;</span>
+                <span class="cookiesDescription">Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web. Si continúa utilizando este sitio asumiremos que está de acuerdo</span>           
+                <button>
+                    <a href ="https://ayudaleyprotecciondatos.es/cookies/">Politica de Cookies</a>
+                </button>
+        </div>
+    </body>
+</html>

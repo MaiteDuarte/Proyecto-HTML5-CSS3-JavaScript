@@ -1,0 +1,53 @@
+<div class="maite"></div>
+<div>
+    <div>
+        <ul id="index">
+            <li class="list listImg">
+                <a value="Content" onclick="getContent()">
+                    <img src="pages/img/logo.png">
+                </a>
+            </li>
+            <li class="list" value= "Peliculas" onclick="getContent()">
+                <a value="Peliculas" onclick="getContent()">Peliculas</a>
+            </li>
+            <li class="list" value="Series" onclick="getContent()">
+                <a value="Series" onclick="getContent()">Series</a>
+            </li>
+            <li id = "genres" class="list" onmouseover="genres()">
+                <a>G&eacute;neros</a>
+            </li>   
+            <li class="list" value="Contacto" onclick="getContent()">
+                <a value="Contacto" onclick="getContent()">Contacto</a>
+            </li>         
+        </ul>
+    </div>
+    <!--Categorias-->
+    <!--Login-->
+    <div id ="login">
+        <button onclick="getLogin()">Login</button>
+    </div>
+    <!--Search-->
+    <div id="search">
+        <button class="searchButton" onclick="search()">
+            <i class="fa fa-search"></i>
+        </button> 
+        <input class="search" type="search">
+    </div>
+    <!--MenuHamburgesa-->
+    <div style="display: none;" id= "hamburgerIcon" onclick = "hamburger()">
+        <img src="https://hiponoo.com/img/menu_movil.png">
+    </div>
+    <div id="hamburger" onmouseover= "hamburger()" onmouseout="hideHamburger()">
+        <ul>
+            <li>
+                <a value="Peliculas" onclick="getContent()">PELICULAS</a>
+            </li>
+            <li>
+                <a value="Series" onclick="getContent()">SERIES</a>
+            </li>
+            <li>
+                <a value="Comunidad" onclick="getContent()">COMUNIDAD</a>
+            </li>
+        </ul>
+    </div>
+</div>
